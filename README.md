@@ -1,6 +1,6 @@
 # ALTOgraf
 
-ALTOgraf is a framework designed to bridge Internet routing topology data with Application-Layer Traffic Optimization (ALTO) standards. It ingests data extracted from the [asmap/kartograf](https://github.com/asmap/kartograf) project to generate standard-compliant ALTO information resources and serves them through custom server-client implementations.
+ALTOgraf is a framework designed to bridge Internet routing topology data with Application-Layer Traffic Optimization (ALTO RFC 7285) standards. It ingests data extracted from the [asmap/kartograf](https://github.com/asmap/kartograf) project to generate standard-compliant ALTO information resources and serves them through custom server-client implementations.
 
 ## Overview
 
@@ -17,15 +17,3 @@ The primary objective of ALTOgraf is twofold:
    - **ALTO Server:** Exposes the generated Network, Cost, and Property maps via standard RESTful endpoints compliant with RFC 7285 and related extensions.
    - **ALTO Client:** A lightweight client to query the Information Resource Directory (IRD), filter maps, and consume ALTO services for traffic optimization.
 
-## Key Standards & References
-
-- [RFC 7285](https://datatracker.ietf.org/doc/html/rfc7285) - Application-Layer Traffic Optimization (ALTO) Protocol
-- [RFC 9240](https://datatracker.ietf.org/doc/html/rfc9240) - ALTO Property-Map Service
-- [asmap/kartograf](https://github.com/asmap/kartograf) - Autonomous System mapping toolchain
-
-```bash
-git clone [https://github.com/YOUR_USERNAME/ALTOgraf.git](https://github.com/YOUR_USERNAME/ALTOgraf.git)
-cd ALTOgraf
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
